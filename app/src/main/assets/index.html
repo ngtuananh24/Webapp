@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApp với JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        #giftImage {
+            display: none; /* Ẩn hình ảnh khi trang tải */
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+        #exitButton {
+            display: none; /* Ẩn nút thoát ảnh ban đầu */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>WELCOME TO WEBAPP !!!</h1>
+<p id="greeting">Nhấn nút bên dưới để nhận quà nhé.</p>
+
+<!-- Nút tương tác -->
+<button onclick="showImage()">Nhấn vào đây</button>
+
+<!-- Nút thoát ảnh -->
+<button id="exitButton" onclick="hideImage()">Thoát ảnh</button>
+
+<!-- Hình ảnh sẽ hiển thị khi người dùng nhấn nút -->
+<img id="giftImage" src="cainit.jpg" alt="Quà tặng" />
+
+<!-- Mô tả MP3 -->
+<p><strong>Bài hát TOP TRENDING:</strong>Tái Sinh - Ca sĩ: Tùng Dương</p>
+<audio controls>
+    <source src="sample.mp3" type="audio/mpeg">
+    Trình duyệt của bạn không hỗ trợ phát âm thanh.
+</audio>
+
+<!-- Mô tả MP4 -->
+<p><strong>VIDEO TRUYỀN ĐỘNG LỰC:</strong> Bài thuyết trình hùng mạnh của tổng thống Donal Trumpl</p>
+<video controls width="320" height="240">
+    <source src="video.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ phát video.
+</video>
+
+<script>
+    function showImage() {
+        // Thay đổi văn bản trong thẻ <p> khi nút được nhấn
+        const greeting = document.getElementById("greeting");
+        greeting.innerText = "Quà của bạn đây rồi!";
+
+        // Hiển thị hình ảnh
+        const image = document.getElementById("giftImage");
+        image.style.display = "block"; // Đặt lại display của hình ảnh thành block để hiển thị
+
+        // Hiển thị nút thoát ảnh
+        const exitButton = document.getElementById("exitButton");
+        exitButton.style.display = "inline-block"; // Hiển thị nút thoát ảnh
+
+        // Hiển thị thông báo
+        alert("Bạn chắc chắn chọn chứ?");
+    }
+
+    function hideImage() {
+        // Ẩn hình ảnh
+        const image = document.getElementById("giftImage");
+        image.style.display = "none";
+
+        // Ẩn nút thoát ảnh
+        const exitButton = document.getElementById("exitButton");
+        exitButton.style.display = "none";
+    }
+</script>
+</body>
+</html>
