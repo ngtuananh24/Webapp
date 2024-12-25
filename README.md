@@ -3,12 +3,12 @@
 > - Class: K57KMT
 > - ID student: K215480106003
 ### Nội dung:
- - [ ] **Cài đặt Android studio và Android SDK**
- - [ ] **Tạo app sử dụng Java**
- - [ ] **Thư mục Assets**
+ - [x] **Cài đặt Android studio và Android SDK**
+ - [x] **Tạo app sử dụng Java**
+ - [x] **Thư mục Assets**
    - Index HTML + other(s): Sử dụng html, css, javascript, kiến thức đã học về web,...
- - [ ] **MainActivity**: Java <-> Javascript
- - [ ] **Tạo một chương trình** giải ptb2,... sử dụng OOP, html,css,java,javasscript.
+ - [x] **MainActivity**: Java <-> Javascript
+ - [x] **Tạo một chương trình** giải ptb2,... sử dụng OOP, html,css,java,javasscript.
 ------------------
 ### Nội dung chi tiết:
 1. Thông tin cá nhân
