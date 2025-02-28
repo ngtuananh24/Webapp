@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     EditText edt_hoten, edt_lop, edt_masv;
-    Button btn_xemtt, btn_webapp;
+    Button btn_xemtt, btn_webapp, btn_dthinhtron;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         edt_masv = findViewById(R.id.edt_masv);
         btn_xemtt = findViewById(R.id.btn_xemtt);
         btn_webapp = findViewById(R.id.btn_webapp);
+        btn_dthinhtron = findViewById(R.id.dthinhtron);
 
         btn_xemtt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,5 +50,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btn_dthinhtron.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(MainActivity.this, MainActivity3.class);
+                startActivity(intent2);
+            }
+        });
+
     }
 }

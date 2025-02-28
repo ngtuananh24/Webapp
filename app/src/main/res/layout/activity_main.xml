@@ -109,11 +109,11 @@
             android:text="Webapp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/dthinhtron"
             android:layout_width="10dp"
             android:layout_height="70dp"
             android:layout_weight="1"
-            android:text="Area Circle" />
+            android:text="S hình tròn" />
     </LinearLayout>
 
 </LinearLayout>
